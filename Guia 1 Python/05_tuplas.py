@@ -1,0 +1,5 @@
+coordenadas_bogota = (4.609, -74.081)
+meses = ('Enero', 'Febrero', 'Marzo')
+print(f'La latitud de Bogotá son: {coordenadas_bogota[0]}')
+print(f'El primer mes del año es: {meses[0]}')
+exit()

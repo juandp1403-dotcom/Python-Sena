@@ -1,0 +1,9 @@
+import flask
+app = flask.Flask(__name__)
+@app.route('/', methods=['GET'])
+def home() -> str:
+    return "<h1>¡Hola, Mundo!</h1>" \
+    "<p>Bienvenido a mi servidor Flask.</p>"
+if __name__ == '__main__':
+    print("Iniciando el servidor Flask en [http://127.0.0.1:5000](http://127.0.0.1:5000)")
+    app.run(host = '0.0.0.0', port=5000, debug=True)
